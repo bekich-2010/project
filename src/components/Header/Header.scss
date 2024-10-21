@@ -1,0 +1,120 @@
+.header {
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &-info{
+      width: 243px;
+      height: 56px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-img {
+      width: 303.19px;
+      height: 48px;
+    }
+    &-tel{
+      background: rgb(65, 180, 230);
+      border-radius: 30px;
+      width: 32px;
+      height: 32px;
+      padding: 7px 7px 7px 5px;
+      position: relative;
+      right: -5px;
+      top: -5px;
+    }
+    &-mess {
+      color: rgba(45, 45, 45, 0.9);
+      font-family: Rubik, sans-serif;
+      font-size: 16px;
+      position: relative;
+    }
+    &-em{
+      color: rgb(45, 45, 45);
+      font-family: Rubik, sans-serif;
+      font-size: 16px;
+    }
+    &-count{
+      color: rgb(45, 45, 45);
+      font-family: Rubik, sans-serif;
+      font-size: 16px;
+    }
+    &-span{
+      color: rgba(45, 45, 45, 0.9);
+      font-family: Rubik, sans-serif;
+      font-size: 16px;
+    }
+    &-btn{
+      border-radius: 8px;
+      background: rgb(234, 12, 12);
+      color: rgb(255, 255, 255);
+      font-family: Rubik, sans-serif;
+      font-size: 14px;
+      width: 165px;
+      height: 48px;
+      padding: 14px 24px 14px 24px;
+      border: none;
+      &:hover{
+        transition: .3s;
+        background: rgba(10, 10, 10, 0.7);
+      }
+    }
+    &-login{
+      color: rgb(45, 45, 45);
+      font-family: Rubik, sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    &-register{
+      color: rgb(45, 45, 45);
+      font-family: Rubik, sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    &-langimg{
+      width: 24px;
+      height: 24px;
+    }
+    &header__row-lang{
+      display: flex;
+    }
+    &-vec{
+      width: 10px;
+      height: 5px;
+      position: relative;
+      right: -6px;
+      top: -6px;
+    }
+    &-spanlang{
+      color: rgba(45, 45, 45, 0.9);
+      font-family: Rubik, sans-serif;
+      font-size: 16px;
+      position: relative;
+      top: -5px;
+      left: 3px;
+    }
+  }
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 124px;
+    &-link{
+      color: rgb(45, 45, 45);
+      font-family: Rubik, sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    &-btn{
+      border-radius: 6px;
+      background: rgb(0, 186, 136);width: 240px;
+      height: 32px;
+      color: rgb(255, 255, 255);
+      font-family: Rubik, sans-serif;
+      font-size: 14px;
+      border: none;
+      padding: 8px 16px 8px 16px;
+    }
+  }
+}
+

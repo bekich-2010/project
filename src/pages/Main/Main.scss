@@ -1,0 +1,89 @@
+.home{
+  &__sides{
+    display: flex;
+    justify-content: space-between;
+    //overflow: hidden;
+    &-title{
+      color: rgb(45, 45, 45);
+      font-family: Rubik, sans-serif;
+      font-size: 40px;
+      margin-bottom: 32px;
+    }
+    &-des{
+      color: rgb(45, 45, 45);
+      font-family: Rubik, sans-serif;
+      font-size: 24px;
+      margin-bottom: 170px;
+    }
+    &-form{
+      border: 8px solid rgb(251, 206, 206);
+      border-radius: 16px;
+      background: rgb(255, 255, 255);
+      width: 520px;
+      height: 64px;
+      gap: 8px;
+    }
+    &-input{
+      width: 382px;
+      height: 48px;
+      border-radius: 10px;
+      background: rgb(242, 242, 242);
+      margin-right: 6px;
+      border: none;
+      color: rgba(45, 45, 45, 0.6);
+      font-family: Rubik, sans-serif;
+      font-size: 16px;
+    }
+    &-btn{
+      color: rgb(255, 255, 255);
+      background: rgb(234, 12, 12);
+      font-family: Rubik, sans-serif;
+      font-size: 14px;
+      width: 114px;
+      height: 48px;
+      border-radius: 8px;
+      padding: 14px 24px 14px 24px;
+      border: none;
+      &:hover{
+        transition: .3s;
+        background: rgba(10, 10, 10, 0.5);
+      }
+    }
+    &-img{
+      width: 267px;
+      height: 738px;
+      position: relative;
+      top: -124px;
+      left: -224px;
+    }
+    &-img2{
+      width: 267px;
+      height: 738px;
+      position: absolute;
+      top: 138px;
+      right: -70px;
+    }
+    &-img3{
+      width: 267px;
+      height: 738px;
+    position: absolute;
+      top: 138px;
+    left: 830px;
+    }
+    &-img4{
+      width: 267px;
+      height: 738px;
+      position: absolute;
+      top: 138px;
+       right: -390px;
+    }
+    &-img5{
+      width: 267px;
+      position: absolute;
+      height: 738px;
+      top: 138px;
+      right: -540px;
+    }
+  }
+}
+
