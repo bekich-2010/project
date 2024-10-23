@@ -18,7 +18,7 @@ const Main = () => {
                                 обслуживания и скорости доставки
                             </p>
                             <form action="" className="home__sides-form">
-                                <input placeholder="         Вставить ссылку на товар" type="search" className="home__sides-input"/>
+                                <input placeholder="Вставить ссылку на товар" type="search" className="home__sides-input"/>
                                 <button className="home__sides-btn">Заказать</button>
                             </form>
                         </div>
@@ -27,9 +27,89 @@ const Main = () => {
                             <img src={logo} alt="" className="home__sides-img2"/>
                             <img src={logo} alt="" className="home__sides-img3"/>
                             <img src={logo} alt="" className="home__sides-img4"/>
-                            <img src={logo} alt="" className="home__sides-img5"/>
+                            {/*<img src={logo} alt="" className="home__sides-img5"/>*/}
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="works">
+                <div className="container">
+                    <h2 className="works__title">Как это работает</h2>
+                    <div className="works__flex">
+                        <div className="works__inst">
+                            <h3 className="works__subtitle">Вы выбираете товар </h3>
+                            <h2 className="works__num">01</h2>
+                            <p className="works__step">Каждый <br/>
+                                веб-разработчик <br/>
+                                знает, что такое <br/>
+                                текст-«рыба». Текст <br/>
+                                этот, несмотря на <br/>
+                                название, не имеет <br/>
+                                никакого отношения к <br/>
+                                обитателям водоемов.</p>
+                        </div>
+                        <div className="works__inst">
+                            <h3 className="works__subtitle">Предоставляете ссылку</h3>
+                            <h2 className="works__num">02</h2>
+                            <p className="works__step">Каждый <br/>
+                                веб-разработчик <br/>
+                                знает, что такое <br/>
+                                текст-«рыба». Текст <br/>
+                                этот, несмотря на <br/>
+                                название, не имеет <br/>
+                                никакого отношения к <br/>
+                                обитателям водоемов.</p>
+                        </div>
+                        <div className="works__inst">
+                            <h3 className="works__subtitle">Внести предоплату</h3>
+                            <h2 className="works__num">03</h2>
+                            <p className="works__step">Каждый <br/>
+                                веб-разработчик <br/>
+                                знает, что такое <br/>
+                                текст-«рыба». Текст <br/>
+                                этот, несмотря на <br/>
+                                название, не имеет <br/>
+                                никакого отношения к <br/>
+                                обитателям водоемов.</p>
+                        </div>
+                        <div className="works__inst">
+                            <h3 className="works__subtitle">Выкупаем товар и везем в Украину</h3>
+                            <h2 className="works__num">04</h2>
+                            <p className="works__step">Каждый <br/>
+                                веб-разработчик <br/>
+                                знает, что такое <br/>
+                                текст-«рыба». Текст <br/>
+                                этот, несмотря на <br/>
+                                название, не имеет <br/>
+                                никакого отношения к <br/>
+                                обитателям водоемов.</p>
+                        </div>
+                        <div className="works__inst">
+                            <h3 className="works__subtitle">Оплатить остаток</h3>
+                            <h2 className="works__num">05</h2>
+                            <p className="works__step">Каждый <br/>
+                                веб-разработчик <br/>
+                                знает, что такое <br/>
+                                текст-«рыба». Текст <br/>
+                                этот, несмотря на <br/>
+                                название, не имеет <br/>
+                                никакого отношения к <br/>
+                                обитателям водоемов.</p>
+                        </div>
+                        <div className="works__inst">
+                            <h3 className="works__subtitle">Получите товар </h3>
+                            <h2 className="works__num">06</h2>
+                            <p className="works__step">Каждый <br/>
+                                веб-разработчик <br/>
+                                знает, что такое <br/>
+                                текст-«рыба». Текст <br/>
+                                этот, несмотря на <br/>
+                                название, не имеет <br/>
+                                никакого отношения к <br/>
+                                обитателям водоемов.</p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </main>
