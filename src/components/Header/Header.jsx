@@ -1,13 +1,24 @@
-import React from 'react';
-import logo from '../../assets/prij.info.jpg'
-import logo2 from '../../assets/Vector (1).png'
-import logo3 from '../../assets/ukr.jpg'
-import logo4 from '../../assets/vec.jpg'
-import './Header.scss'
+import React, { useState } from 'react';
+import logo from '../../assets/prij.info.jpg';
+import logo2 from '../../assets/Vector (1).png';
+import logo3 from '../../assets/ukr.jpg';
+import logo4 from '../../assets/vec.jpg';
+import './Header.scss';
+import Register from "../../pages/Register/Register";
 
 const Header = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleRegisterClick = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleClose = () => {
+        setIsModalOpen(false);
+    };
+
     return (
-        <haeder className="header">
+        <header className="header"> {/* Исправлено на header */}
             <div className="container">
                 <div className="header__row">
                     <img src={logo} alt="" className="header__row-img"/>
@@ -22,9 +33,19 @@ const Header = () => {
                     </div>
                     <button className="header__row-btn">Оформить заказ</button>
                     <div className="log/reg">
-                        <a href="" className="header__row-login">Вход</a>
+                        <a href="#" className="header__row-login">Вход</a>
                         /
-                        <a href="" className="header__row-register">Регистрация</a>
+                        <a
+                            href="#"
+                            className="header__row-register"
+                            onClick={(e) => {
+                                e.preventDefault(); // Предотвращаем переход
+                                handleRegisterClick(); // Открываем модальное окно
+                            }}
+                        >
+                            Регистрация
+                        </a>
+                        <Register isOpen={isModalOpen} onClose={handleClose} />
                     </div>
                     <div className="header__row-lang">
                         <img src={logo3} alt="" className="header__row-langimg"/>
@@ -34,18 +55,18 @@ const Header = () => {
                 </div>
                 <div className="header__row2">
                     <nav className="header__nav">
-                        <a href="" className="header__nav-link">О компании </a>
-                        <a href="" className="header__nav-link">Список магазину</a>
-                        <a href="" className="header__nav-link">Отзывы</a>
-                        <a href="" className="header__nav-link">Вопрос-ответ</a>
-                        <a href="" className="header__nav-link">Калькулятор</a>
-                        <a href="" className="header__nav-link">Контакты</a>
+                        <a href="#" className="header__nav-link">О компании</a>
+                        <a href="#" className="header__nav-link">Список магазину</a>
+                        <a href="#" className="header__nav-link">Отзывы</a>
+                        <a href="#" className="header__nav-link">Вопрос-ответ</a>
+                        <a href="#" className="header__nav-link">Калькулятор</a>
+                        <a href="#" className="header__nav-link">Контакты</a>
                         <button className="header__nav-btn">Помощь в поиске товаров</button>
                     </nav>
                 </div>
             </div>
-        </haeder>
+        </header>
     );
-}
+};
 
 export default Header;
