@@ -5,20 +5,32 @@ import logo3 from '../../assets/ukr.jpg';
 import logo4 from '../../assets/vec.jpg';
 import './Header.scss';
 import Register from "../../pages/Register/Register";
+import Login from "../../pages/Login/Login";
 
 const Header = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+    const [isLoginOpen, setIsLoginOpen] = useState(false);
 
     const handleRegisterClick = () => {
-        setIsModalOpen(true);
+        setIsRegisterOpen(true);
+        setIsLoginOpen(false);
     };
 
-    const handleClose = () => {
-        setIsModalOpen(false);
+    const handleLoginClick = () => {
+        setIsLoginOpen(true);
+        setIsRegisterOpen(false);
+    };
+
+    const closeRegister = () => {
+        setIsRegisterOpen(false);
+    };
+
+    const closeLogin = () => {
+        setIsLoginOpen(false);
     };
 
     return (
-        <header className="header"> {/* Исправлено на header */}
+        <header className="header">
             <div className="container">
                 <div className="header__row">
                     <img src={logo} alt="" className="header__row-img"/>
@@ -33,20 +45,14 @@ const Header = () => {
                     </div>
                     <button className="header__row-btn">Оформить заказ</button>
                     <div className="log/reg">
-                        <a href="#" className="header__row-login">Вход</a>
+                        <a onClick={handleLoginClick} href="#" className="header__row-login">Вход</a>
                         /
-                        <a
-                            href="#"
-                            className="header__row-register"
-                            onClick={(e) => {
-                                e.preventDefault(); // Предотвращаем переход
-                                handleRegisterClick(); // Открываем модальное окно
-                            }}
-                        >
+                        <a href="#" className="header__row-register" onClick={(e) => { e.preventDefault(); handleRegisterClick(); }}>
                             Регистрация
                         </a>
-                        <Register isOpen={isModalOpen} onClose={handleClose} />
                     </div>
+                    {isLoginOpen && <Login isOpen={isLoginOpen} onClose={closeLogin} />}
+                    {isRegisterOpen && <Register isOpen={isRegisterOpen} onClose={closeRegister} />}
                     <div className="header__row-lang">
                         <img src={logo3} alt="" className="header__row-langimg"/>
                         <span className="header__row-spanlang">Укр</span>
@@ -70,3 +76,4 @@ const Header = () => {
 };
 
 export default Header;
+
