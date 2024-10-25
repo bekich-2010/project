@@ -18,7 +18,8 @@ const Main = () => {
                                 обслуживания и скорости доставки
                             </p>
                             <form action="" className="home__sides-form">
-                                <input placeholder="Вставить ссылку на товар" type="search" className="home__sides-input"/>
+                                <input placeholder="Вставить ссылку на товар" type="search"
+                                       className="home__sides-input"/>
                                 <button className="home__sides-btn">Заказать</button>
                             </form>
                         </div>
@@ -109,7 +110,32 @@ const Main = () => {
                                 обитателям водоемов.</p>
                         </div>
                     </div>
-
+                    <div className="works__div">
+                        <button className="works__ord">Заказать</button>
+                    </div>
+                </div>
+            </section>
+            <section className="about">
+                <div className="container">
+                    <div className="about__sides">
+                        <div className="about__start">
+                            <h2 className="about__title">О нас</h2>
+                            <h5 className="about__subtitle">15 лет опыт производства. Знаем все доставке</h5>
+                            <p className="about__info">Компания Poland24 осуществляет доставку из <br/>
+                                любого магазина/поставщика/производителя <br/>
+                                стран Евросоюза, которые осуществляют <br/>
+                                доставку товара курьером в Польшу.</p>
+                            <button className="about__btn">Подробнее</button>
+                        </div>
+                        <div className="about__video">
+                            <a href="https://youtu.be/gbDSms_uKBM" className="video-link"
+                               target="_blank">
+                                <video width="320" height="240" controls>
+                                    <source src="https://youtu.be/gbDSms_uKBM" type="video/mp4"/>
+                                </video>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

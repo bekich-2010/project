@@ -94,6 +94,7 @@
 
 .works{
   background: #fff8;
+  margin-bottom: 150px;
   &__title{
     color: rgb(45, 45, 45);
     font-family: Rubik, sans-serif;
@@ -144,8 +145,78 @@
     border-radius: 8px;
     box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.1);
     background: rgb(255, 255, 255);
+    margin-bottom: 150px;
   }
-
+  &__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  &__ord{
+    width: 154px;
+    height: 62px;
+    padding: 22px 30px 22px 30px;
+    border-radius: 10px;
+    background: rgb(234, 12, 12);
+    color: rgb(255, 255, 255);
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    border: none;
+    transition: .4s;
+    &:hover{
+      transition: .3s;
+      transform: translateY(-5px);
+    }
+  }
+}
+.about{
+  &__sides{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  background: #fff7;
+  &__title{
+    color: rgb(45, 45, 45);
+    font-family: Rubik, sans-serif;
+    font-size: 40px;
+    margin-bottom: 16px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: -24px;
+      width: 8px;
+      height: 98px;
+      background: rgb(234, 12, 12);
+    }
+  }
+  &__subtitle{
+    color: rgb(45, 45, 45);
+    font-family: Rubik, sans-serif;
+    font-size: 24px;
+    margin-bottom: 64px;
+  }
+  &__info{
+    color: rgba(45, 45, 45, 0.9);
+    font-family: Rubik, sans-serif;
+    font-size: 24px;
+    margin-bottom: 64px;
+  }
+  &__btn{
+    color: rgb(45, 45, 45);
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 2px solid rgb(149, 164, 170);
+    border-radius: 8px;
+    width: 128px;
+    height: 48px;
+    padding: 14px 24px 14px 24px;
+    transition: .4s;
+    &:hover{
+      transition: .3s;
+      transform: translateY(-12px);
+    }
+  }
+}
 
